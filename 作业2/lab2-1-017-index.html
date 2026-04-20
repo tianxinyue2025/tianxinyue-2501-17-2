@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>图书活动专区</title>
+    <link type="text/css" rel="stylesheet" href="CSS/lab2-1-017-index.css">
+</head>
+<body>
+    <!-- 固定顶部导航 -->
+    <div class="header">
+        <div class="logo">图书商城</div>
+        <ul class="nav">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">图书分类</a></li>
+            <li><a href="#hot-books">热门推荐</a></li>
+            <li><a href="#new-books">新品上市</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </div>
+
+    <!-- 主体三栏布局：左、中、右 -->
+    <div id="main">
+        <!-- 左栏：图书分类（相对定位） -->
+        <div class="left">
+            <h3>图书分类</h3>
+            <ul>
+                <li><a href="#">图书、童书</a></li>
+                <li><a href="#">电子书、网络文学</a></li>
+                <li><a href="#">创意文具</a></li>
+                <li><a href="#">手机、数码、电脑办公</a></li>
+                <li><a href="#">母婴玩具</a></li>
+                <li><a href="#">食品、茶酒</a></li>
+                <li><a href="#">美妆、个人护理</a></li>
+                <li><a href="#">家用电器</a></li>
+                <li><a href="#">汽车、配件、用品</a></li>
+            </ul>
+        </div>
+
+        <!-- 中栏：内容区域 -->
+        <div class="banner">
+            <!-- 父相子绝：hover效果 -->
+            <div class="book-item">
+                <img src="img/book_activity.jpg" alt="图书活动">
+                <div class="hover-info">点击查看详情</div>
+            </div>
+            <img src="img/banner.jpg" alt="banner图">
+
+            <!-- 热门推荐（浮动） -->
+            <div id="hot-books" class="hot-books">
+                <h3>热门推荐</h3>
+                <p class="recommend-text">精选当下最受欢迎的精品好书，涵盖文学社科、经管励志、生活百科等多个领域。每一本都是经过读者口碑验证的经典之作，助您在阅读中遇见更好的自己。</p>
+                <div class="hot-list">
+                    <div class="hot-item">
+                        <p class="book-title">《被讨厌的勇气》</p>
+                        <p class="book-author">岸见一郎 著</p>
+                        <p class="book-desc">所谓的自由，就是被别人讨厌。这是一本带你走向心灵自由的阿德勒心理学入门书。</p>
+                        <img src="img/book1.jpg" alt="被讨厌的勇气">
+                    </div>
+                    <div class="hot-item">
+                        <p class="book-title">《跟着诗词去旅行》</p>
+                        <p class="book-author">郁离子 著</p>
+                        <p class="book-desc">在诗词中游历中国，在旅行中品味诗词。跟随诗人的脚步，探寻诗词背后的故事。</p>
+                        <img src="img/book2.jpg" alt="跟着诗词去旅行">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新书上市（表格布局） -->
+            <div id="new-books" class="new-books">
+                <h3>新书上市</h3>
+                <table border="1" cellpadding="8" cellspacing="0">
+                    <tr>
+                        <th>书名</th>
+                        <th>作者</th>
+                        <th>价格</th>
+                    </tr>
+                    <tr>
+                        <td>人间信</td>
+                        <td>麦家</td>
+                        <td>39元</td>
+                    </tr>
+                    <tr>
+                        <td>苏东坡传</td>
+                        <td>林语堂</td>
+                        <td>49.9元</td>
+                    </tr>
+                    <tr>
+                        <td>时间的秩序</td>
+                        <td>卡洛·罗韦利</td>
+                        <td>45元</td>
+                    </tr>
+                    <tr>
+                        <td>置身事内</td>
+                        <td>兰小欢</td>
+                        <td>59元</td>
+                    </tr>
+                    <tr>
+                        <td>云边有个小卖部</td>
+                        <td>张嘉佳</td>
+                        <td>36.8元</td>
+                    </tr>
+                    <tr>
+                        <td>人间失格</td>
+                        <td>太宰治</td>
+                        <td>38元</td>
+                    </tr>
+                </table>
+                <div class="book-intro">
+                    <div class="intro-item">
+                        <img src="img/苏东坡传.jpg" alt="苏东坡传" class="intro-img">
+                        <h4>《苏东坡传》</h4>
+                        <p>林语堂先生倾情力作，以生动细腻的笔触描绘了北宋文豪苏东坡跌宕起伏的一生。从少年得志到乌台诗案，从一贬再贬到旷达超脱，苏东坡用他才华横溢的诗词文章和乐观豁达的人生态度，成为中国历史上最受爱戴的文人之一。本书不仅是一部人物传记，更是一堂关于如何在逆境中保持本心的生动课程。</p>
+                    </div>
+                    <div class="intro-item">
+                        <img src="img/云边有个小卖部.jpg" alt="云边有个小卖部" class="intro-img">
+                        <h4>《云边有个小卖部》</h4>
+                        <p>张嘉佳温情新作，讲述少年刘十三在云边镇与外婆王莺莺相依为命的故事。云边镇的小卖部里藏着成长的欢笑与泪滴，那些关于亲情、友情和爱情的温柔记忆，在作者细腻的笔触下缓缓流淌。这是一本关于告别与重逢的书，让我们看到平凡生活中的光亮与希望。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右栏：促销信息（固定定位） -->
+        <div class="right">
+            <h3>促销活动</h3>
+            <p>满100减30</p>
+            <p>新用户立减20</p>
+            <img src="img/promotion.jpeg" alt="促销广告">
+        </div>
+    </div>
+</body>
+</html>
