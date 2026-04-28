@@ -1,0 +1,464 @@
+/* 全局初始化 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    padding-top: 60px;
+    font-family: "Microsoft Yahei", sans-serif;
+    color: #333;
+}
+
+/* -----------------------
+固定定位：顶部导航
+------------------------*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #2d8cf0;
+    color: white;
+    padding: 0 20px;
+    z-index: 999;
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+.nav {
+    float: right;
+}
+
+.nav li {
+    float: left;
+    margin-left: 20px;
+    line-height: 60px;
+}
+
+.nav a {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.nav a:hover {
+    background: #1b6aff;
+    cursor: pointer;
+}
+
+/* -----------------------
+三栏浮动布局
+------------------------*/
+#main {
+    width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+/* 左栏：相对定位 */
+.left {
+    position: relative;
+    float: left;
+    width: 200px;
+    background: #f5f5f5;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.left h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2d8cf0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.left li {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.left a {
+    color: #333;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.left a:hover {
+    color: #2d8cf0;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+/* 中栏 */
+.banner {
+    float: left;
+    width: 780px;
+    margin-right: 10px;
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* 父相子绝 + 鼠标显示隐藏 */
+.book-item {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.hover-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    display: none;
+    border-radius: 0 0 4px 4px;
+}
+
+.book-item:hover .hover-info {
+    display: block;
+    cursor: pointer;
+}
+
+/* 热门推荐：浮动 */
+.hot-books {
+    margin: 15px 0;
+}
+
+.hot-books h3 {
+    color: #2d8cf0;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.recommend-text {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f0f7ff;
+    border-left: 3px solid #2d8cf0;
+    border-radius: 0 4px 4px 0;
+}
+
+.hot-list {
+    overflow: hidden;
+}
+
+.hot-item {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 15px;
+    background: #f8f8f8;
+}
+
+.hot-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.hot-item p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.book-title {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.book-author {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.book-desc {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.hot-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* 表格样式 */
+.new-books {
+    clear: both;
+    margin-top: 20px;
+}
+
+.new-books h3 {
+    color: #2d8cf0;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.new-books table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.new-books th {
+    background: #f5f5f5;
+    color: #2d8cf0;
+}
+
+.new-books tr:hover {
+    background: #f9f9f9;
+}
+
+.book-intro {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.intro-item {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+}
+
+.intro-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.intro-item h4 {
+    color: #2d8cf0;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.intro-img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background: #f5f5f5;
+}
+
+.intro-item p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.8;
+    text-indent: 2em;
+}
+
+/* 右栏：固定定位 */
+.right {
+    position: fixed;
+    top: 70px;
+    right: calc((100% - 1200px)/2);
+    width: 190px;
+    background: #fff9c0;
+    padding: 15px;
+    border: 1px solid #f60;
+    border-radius: 4px;
+}
+
+.right h3 {
+    color: #f60;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #f60;
+}
+
+.right p {
+    margin: 8px 0;
+    color: #d85000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.right img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+/* -----------------------
+登录/注册弹窗样式
+------------------------*/
+.login-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.login-btn a {
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 15px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.login-btn a:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.login-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.login-box h3 {
+    text-align: center;
+    color: #2d8cf0;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #2d8cf0;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-buttons button {
+    flex: 1;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-buttons button:first-child {
+    background: #2d8cf0;
+    color: white;
+}
+
+.form-buttons button:first-child:hover {
+    background: #1b6aff;
+}
+
+.form-buttons button:last-child {
+    background: #6c757d;
+    color: white;
+}
+
+.form-buttons button:last-child:hover {
+    background: #5a6268;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    color: #999;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+#loginMsg {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+#loginMsg.success {
+    color: #28a745;
+}
+
+#loginMsg.error {
+    color: #dc3545;
+}
